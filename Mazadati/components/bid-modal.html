@@ -1,0 +1,66 @@
+<div class="modal fade" id="bidModal" tabindex="-1" aria-labelledby="bidModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="bidModalLabel">
+                    <i class="fas fa-gavel me-2"></i>
+                    تقديم مزايدة
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="إغلاق"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="alert alert-light border mb-3">
+                    <div class="d-flex justify-content-between">
+                        <span>السعر الحالي</span>
+                        <strong id="currentBidValue">0 ريال</strong>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-2">
+                        <span>أقل مزايدة</span>
+                        <strong id="minimumBidValue">0 ريال</strong>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="bidAmount" class="form-label">
+                        قيمة المزايدة
+                    </label>
+
+                    <input type="number"
+                           class="form-control"
+                           id="bidAmount"
+                           min="0"
+                           placeholder="أدخل قيمة المزايدة">
+
+                    <div id="bidError" class="text-danger mt-2"></div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    إلغاء
+                </button>
+
+                <button type="button"
+                        class="btn btn-primary"
+                        id="submitBidButton">
+                    <i class="fas fa-gavel me-1"></i>
+                    تأكيد المزايدة
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>

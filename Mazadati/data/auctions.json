@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "ساعة فاخرة",
+        "category": "ساعات",
+        "price": 85000,
+        "bids": 12,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+        "description": "ساعة أنيقة بتصميم فاخر مناسبة للاستخدام اليومي والمناسبات."
+    },
+    {
+        "id": 2,
+        "title": "سيارة رياضية",
+        "category": "سيارات",
+        "price": 12500000,
+        "bids": 8,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=80",
+        "description": "سيارة رياضية بحالة ممتازة وتصميم مميز."
+    },
+    {
+        "id": 3,
+        "title": "حاسوب محمول",
+        "category": "إلكترونيات",
+        "price": 450000,
+        "bids": 15,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=80",
+        "description": "حاسوب محمول مناسب للعمل والدراسة والتصميم."
+    },
+    {
+        "id": 4,
+        "title": "هاتف ذكي",
+        "category": "إلكترونيات",
+        "price": 320000,
+        "bids": 10,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
+        "description": "هاتف ذكي حديث بمواصفات قوية."
+    },
+    {
+        "id": 5,
+        "title": "كاميرا احترافية",
+        "category": "إلكترونيات",
+        "price": 580000,
+        "bids": 6,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+        "description": "كاميرا احترافية للتصوير الفوتوغرافي والفيديو."
+    },
+    {
+        "id": 6,
+        "title": "لوحة فنية",
+        "category": "متنوع",
+        "price": 150000,
+        "bids": 5,
+        "status": "نشط",
+        "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80",
+        "description": "لوحة فنية مميزة مناسبة للديكور."
+    }
+]

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>إضافة مزاد | مزادتي</title>
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        rel="stylesheet">
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand"
+            href="index.html">
+
+            <i class="fa-solid fa-gavel"></i>
+
+            مزادتي
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        الرئيسية
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="auctions.html">
+
+                        المزادات
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="add-auction.html">
+
+                        إضافة مزاد
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="profile.html">
+
+                        حسابي
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <div class="navbar-actions">
+
+                <a
+                    href="profile.html"
+                    class="btn btn-outline-light">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    حسابي
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <i class="fa-solid fa-plus-circle page-header-icon"></i>
+
+            <h1>
+                إضافة مزاد جديد
+            </h1>
+
+            <p>
+                أضف منتجك وابدأ المزاد الآن
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ADD AUCTION ================= -->
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9">
+
+                <div class="form-card">
+
+                    <div class="form-card-header">
+
+                        <h2>
+
+                            <i class="fa-solid fa-gavel"></i>
+
+                            بيانات المزاد
+
+                        </h2>
+
+                        <p>
+                            أدخل المعلومات الخاصة بالمزاد بدقة.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="addAuctionForm"
+                        novalidate>
+
+
+                        <!-- TITLE -->
+
+                        <div class="mb-4">
+
+                            <label
+                                for="auctionTitle"
+                                class="form-label">
+
+                                عنوان المزاد
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="auctionTitle"
+                                class="form-control"
+                                placeholder="مثال: سيارة تويوتا كامري 2020"
+                                required>
+
+
+                            <div
+                                class="invalid-feedback">
+
+                                يرجى إدخال عنوان المزاد.
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CATEGORY -->
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                <label
+                                    for="auctionCategory"
+                                    class="form-label">
+
+                                    التصنيف
+
+                                    <span class="required">
+                                        *
+                                    </span>
+
+                                </label>
+
+
+                                <select
+                                    id="auctionCategory"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        اختر التصنيف
+                                    </option>
+
+                                    <option value="سيارات">
+                                        سيارات
+                                    </option>
+
+                                    <option value="إلكترونيات">
+                                        إلكترونيات
+                                    </option>
+
+                                    <option value="ساعات">
+                                        ساعات
+                                    </option>
+
+                                    <option value="عقارات">
+                                        عقارات
+                                    </option>
+
+                                    <option value="متنوع">
+                                        متنوع
+                                    </option>
+
+                                </select>
+
+
+                                <div
+                                    class="invalid-feedback">
+
+                                    يرجى اختيار التصنيف.
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- PRICE -->
+
+                            <div class="col-md-6 mb-4">
+
+                                <label
+                                    for="auctionPrice"
+                                    class="form-label">
+
+                                    السعر الابتدائي
+
+                                    <span class="required">
+                                        *
+                                    </span>
+
+                                </label>
+
+
+                                <div class="input-group">
+
+                                    <input
+                                        type="number"
+                                        id="auctionPrice"
+                                        class="form-control"
+                                        min="1"
+                                        placeholder="100000"
+                                        required>
+
+                                    <span class="input-group-text">
+                                        ريال
+                                    </span>
+
+                                </div>
+
+
+                                <div
+                                    class="invalid-feedback">
+
+                                    يرجى إدخال سعر صحيح.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- DURATION -->
+
+                        <div class="mb-4">
+
+                            <label
+                                for="auctionDuration"
+                                class="form-label">
+
+                                مدة المزاد
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <select
+                                id="auctionDuration"
+                                class="form-select"
+                                required>
+
+                                <option value="">
+                                    اختر مدة المزاد
+                                </option>
+
+                                <option value="24 ساعة">
+                                    24 ساعة
+                                </option>
+
+                                <option value="3 أيام">
+                                    3 أيام
+                                </option>
+
+                                <option value="7 أيام">
+                                    7 أيام
+                                </option>
+
+                                <option value="14 يوم">
+                                    14 يوم
+                                </option>
+
+                                <option value="30 يوم">
+                                    30 يوم
+                                </option>
+
+                            </select>
+
+
+                            <div
+                                class="invalid-feedback">
+
+                                يرجى اختيار مدة المزاد.
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="mb-4">
+
+                            <label
+                                for="auctionDescription"
+                                class="form-label">
+
+                                وصف المزاد
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <textarea
+                                id="auctionDescription"
+                                class="form-control"
+                                rows="6"
+                                maxlength="1000"
+                                placeholder="اكتب وصفًا واضحًا ومفصلًا للمنتج..."
+                                required></textarea>
+
+
+                            <div class="d-flex justify-content-between mt-2">
+
+                                <div
+                                    class="invalid-feedback"
+                                    id="descriptionError">
+
+                                    يرجى إدخال وصف المزاد.
+
+                                </div>
+
+
+                                <small
+                                    class="text-muted"
+                                    id="characterCount">
+
+                                    0 / 1000
+
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- IMAGE -->
+
+                        <div class="mb-4">
+
+                            <label
+                                for="auctionImage"
+                                class="form-label">
+
+                                صورة المزاد
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <input
+                                type="file"
+                                id="auctionImage"
+                                class="form-control"
+                                accept="image/jpeg,image/png,image/webp"
+                                required>
+
+
+                            <small class="text-muted">
+
+                                الصيغ المسموحة:
+                                JPG, PNG, WEBP
+
+                                <br>
+
+                                الحد الأقصى لحجم الصورة:
+                                5MB
+
+                            </small>
+
+
+                            <div
+                                id="imagePreviewContainer"
+                                class="image-preview-container d-none">
+
+                                <img
+                                    id="imagePreview"
+                                    src=""
+                                    alt="معاينة الصورة">
+
+
+                                <button
+                                    type="button"
+                                    id="removeImage"
+                                    class="btn btn-danger btn-sm">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                    إزالة الصورة
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- TERMS -->
+
+                        <div class="form-check mb-4">
+
+                            <input
+                                type="checkbox"
+                                id="auctionTerms"
+                                class="form-check-input"
+                                required>
+
+
+                            <label
+                                for="auctionTerms"
+                                class="form-check-label">
+
+                                أوافق على شروط وأحكام منصة مزادتي.
+
+                                <span class="required">
+                                    *
+                                </span>
+
+                            </label>
+
+
+                            <div
+                                class="invalid-feedback">
+
+                                يجب الموافقة على الشروط والأحكام.
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ERROR -->
+
+                        <div
+                            id="auctionError"
+                            class="alert alert-danger d-none">
+
+                        </div>
+
+
+
+                        <!-- BUTTONS -->
+
+                        <div class="form-actions">
+
+                            <a
+                                href="auctions.html"
+                                class="btn btn-secondary">
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                                إلغاء
+
+                            </a>
+
+
+                            <button
+                                type="submit"
+                                id="submitAuction"
+                                class="btn btn-gold">
+
+                                <i class="fa-solid fa-gavel"></i>
+
+                                نشر المزاد
+
+                            </button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SUCCESS MODAL ================= -->
+
+<div
+    class="modal fade"
+    id="auctionSuccessModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+    <div
+        class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    تمت العملية بنجاح
+
+                </h5>
+
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="إغلاق">
+                </button>
+
+            </div>
+
+
+            <div class="modal-body text-center">
+
+                <i
+                    class="fa-solid fa-circle-check success-icon">
+                </i>
+
+
+                <h3 class="mt-3">
+                    تم نشر المزاد بنجاح
+                </h3>
+
+
+                <p class="text-muted">
+
+                    أصبح المزاد الخاص بك متاحًا ضمن قائمة المزادات.
+
+                </p>
+
+            </div>
+
+
+            <div class="modal-footer justify-content-center">
+
+                <a
+                    href="auctions.html"
+                    class="btn btn-gold">
+
+                    <i class="fa-solid fa-gavel"></i>
+
+                    مشاهدة المزادات
+
+                </a>
+
+
+                <a
+                    href="profile.html"
+                    class="btn btn-outline-primary">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    حسابي
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="main-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h4>
+
+                    <i class="fa-solid fa-gavel"></i>
+
+                    مزادتي
+
+                </h4>
+
+                <p>
+                    منصة إلكترونية لإدارة المزادات
+                    وبيع وشراء المنتجات بطريقة سهلة.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-6 text-md-end">
+
+                <p>
+                    جميع الحقوق محفوظة © 2026 مزادتي
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script
+    src="js/add-auction.js">
+</script>
+
+
+</body>
+
+</html>
